@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRISEnse Dashboard Launcher</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .button {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+        }
+        .instructions {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+        .step {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">ATTRISEnse</div>
+        <h2>HR Analytics Dashboard Launcher</h2>
+        
+        <div class="instructions">
+            <h3>🚀 How to Launch Your Dashboard:</h3>
+            <div class="step">
+                <strong>Option 1 (Easiest):</strong> Double-click <code>run_dashboard.bat</code>
+            </div>
+            <div class="step">
+                <strong>Option 2:</strong> Run <code>streamlit run streamlit_dashboard_simple.py</code> in PowerShell
+            </div>
+            <div class="step">
+                <strong>Option 3:</strong> Run <code>python run_dashboard.py</code> (uses launcher)
+            </div>
+        </div>
+        
+        <p>This will automatically install Streamlit and open your dashboard!</p>
+        
+        <a href="run_dashboard.bat" class="button">🚀 Launch Dashboard</a>
+        <a href="streamlit_dashboard.py" class="button">📄 View Dashboard Code</a>
+        
+        <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+            <p>💡 The dashboard will open at: <strong>http://localhost:8501</strong></p>
+            <p>⏹️ Press Ctrl+C in the terminal to stop the dashboard</p>
+        </div>
+    </div>
+</body>
+</html>
